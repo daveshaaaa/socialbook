@@ -42,9 +42,10 @@ Template.main.events({
   },
   "click .js-delete"() {
     let dId = $("#docId").val();
-    $("#conid").val(dId);
+    
     $("#viewModal").modal("hide");
     $("#conDelModal").modal("show");
+    $("#conid").val(dId);
     },
   'click .js-view'() {
     let that = this;
