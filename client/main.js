@@ -9,6 +9,7 @@ import './addprofile/addprofile.html';
 import './ViewProfile/viewprofile.html';
 import './Navbar/navbar.html';
 import './profiles/profiles.html';
+import './profiles/profiles.js';
 import './confirmDel/confirmDel.html';
 import './confirmDel/confirmDel.js';
 Template.nav.events({
@@ -72,17 +73,12 @@ let validateAddForm = (fn, ln) => {
   return valid;
 }
 
-Template.profile.helpers({
-  profiles() {
-    return socialdb.find();
-  }
-});
 
 /*
 profile picture
 first
 last
 age
-sex
+sex 
 description
 */
